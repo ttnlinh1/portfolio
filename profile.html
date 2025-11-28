@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile — [Tên của bạn]</title>
+  <meta name="description" content="Trang profile cá nhân của [Tên của bạn]" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#06b6d4;
+      --glass: rgba(255,255,255,0.04);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:linear-gradient(180deg,#071025 0%, #081428 60%);
+      color:#e6eef6; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      line-height:1.45; padding:24px;
+    }
+    .container{max-width:980px; margin:0 auto;}
+    .profile{
+      display:grid; grid-template-columns: 220px 1fr; gap:20px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.03); padding:20px; border-radius:12px;
+      backdrop-filter: blur(6px);
+    }
+    .avatar{
+      text-align:center; padding:10px;
+    }
+    .avatar img{
+      width:160px; height:160px; object-fit:cover; border-radius:50%;
+      border:4px solid rgba(255,255,255,0.06);
+      box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+    }
+    h1{font-size:1.5rem; margin:10px 0 4px;}
+    .role{color:var(--muted); margin-bottom:8px;}
+    .contact{display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:8px;}
+    .chip{
+      background:var(--glass); padding:6px 10px; border-radius:999px; color:var(--muted);
+      font-size:0.9rem; display:inline-flex; align-items:center; gap:8px;
+    }
+    .main{
+      padding:6px 4px;
+    }
+    .section{margin-bottom:18px; padding:12px; background:transparent; border-radius:8px;}
+    .section h2{font-size:1.05rem; margin:0 0 10px; display:flex; align-items:center; gap:8px;}
+    .about p{color:var(--muted); margin:0;}
+    .skills{display:flex; gap:8px; flex-wrap:wrap}
+    .skill{background:rgba(6,182,212,0.07); color:var(--accent); padding:6px 8px; border-radius:6px; font-weight:600; font-size:0.85rem}
+    .timeline{display:flex; flex-direction:column; gap:8px}
+    .item{background:rgba(255,255,255,0.02); padding:10px; border-radius:8px; border:1px solid rgba(255,255,255,0.02)}
+    .item .meta{color:var(--muted); font-size:0.85rem}
+    .projects{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px}
+    .project{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00)); padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,0.02)}
+    .btn{
+      display:inline-flex; gap:8px; align-items:center; padding:8px 12px; border-radius:8px;
+      background:var(--accent); color:#042027; font-weight:700; text-decoration:none;
+    }
+    .actions{display:flex; gap:8px; flex-wrap:wrap}
+    footer{color:var(--muted); font-size:0.85rem; margin-top:14px; text-align:center}
+    /* Responsive */
+    @media (max-width:720px){
+      .profile{grid-template-columns: 1fr; text-align:center}
+      .avatar{order: -1}
+      .main{padding-top:0}
+    }
+    /* small utilities */
+    .muted{color:var(--muted)}
+    .copy{cursor:pointer}
+    /* focus styles */
+    a:focus, button:focus, .chip:focus{outline:3px solid rgba(6,182,212,0.18); outline-offset:2px}
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <div class="profile" aria-label="Profile chính">
+      <aside class="avatar" aria-labelledby="name">
+        <img src="avatar.jpg" alt="Ảnh đại diện của [Tên của bạn]" id="profilePhoto" />
+        <h1 id="name">[Tên của bạn]</h1>
+        <div class="role">Frontend Developer · Designer</div>
+
+        <div class="contact" aria-hidden="false">
+          <div class="chip" title="Email">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span id="emailText">you@example.com</span>
+            <button class="copy" aria-label="Sao chép email" onclick="copyEmail()" title="Sao chép email" style="background:none;border:none;color:var(--muted);margin-left:6px">📋</button>
+          </div>
+          <a class="chip" href="tel:+84123456789" aria-label="Gọi điện">📞 +84 123 456 789</a>
+        </div>
+
+        <div style="margin-top:12px" class="actions" aria-hidden="false">
+          <a class="btn" href="[link-to-cv.pdf]" download>⬇️ Tải CV</a>
+          <a class="btn" href="mailto:you@example.com">✉️ Liên hệ</a>
+        </div>
+      </aside>
+
+      <section class="main">
+        <div class="section about" aria-labelledby="aboutTitle">
+          <h2 id="aboutTitle">Giới thiệu</h2>
+          <p>Xin chào — tôi là <strong>[Tên của bạn]</strong>, chuyên phát triển giao diện người dùng, tối ưu trải nghiệm và xây dựng sản phẩm trực quan. Tôi làm việc với HTML, CSS, JavaScript và framework hiện đại như React / Vue.</p>
+        </div>
+
+        <div class="section" aria-labelledby="skillsTitle">
+          <h2 id="skillsTitle">Kỹ năng</h2>
+          <div class="skills" role="list">
+            <span class="skill" role="listitem">HTML</span>
+            <span class="skill" role="listitem">CSS / SCSS</span>
+            <span class="skill" role="listitem">JavaScript</span>
+            <span class="skill" role="listitem">React</span>
+            <span class="skill" role="listitem">Next.js</span>
+            <span class="skill" role="listitem">UI/UX</span>
+            <span class="skill" role="listitem">Git</span>
+          </div>
+        </div>
+
+        <div class="section" aria-labelledby="workTitle">
+          <h2 id="workTitle">Kinh nghiệm</h2>
+          <div class="timeline">
+            <div class="item">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <strong>Frontend Developer — Công ty ABC</strong>
+                <span class="muted">2022 — Hiện tại</span>
+              </div>
+              <div class="meta muted">Xây dựng dashboard, tối ưu hiệu năng, triển khai CI/CD</div>
+            </div>
+            <div class="item">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <strong>UI Designer — Freelancer</strong>
+                <span class="muted">2020 — 2022</span>
+              </div>
+              <div class="meta muted">Thiết kế prototype, hệ thống design, tư vấn trải nghiệm người dùng</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" aria-labelledby="projectsTitle">
+          <h2 id="projectsTitle">Dự án tiêu biểu</h2>
+          <div class="projects">
+            <article class="project" aria-labelledby="p1">
+              <h3 id="p1">Tên dự án 1</h3>
+              <p class="muted">Mô tả ngắn về dự án, vai trò, công nghệ.</p>
+              <div style="margin-top:8px"><a class="btn" href="#" target="_blank" rel="noopener">Xem demo</a></div>
+            </article>
+            <article class="project" aria-labelledby="p2">
+              <h3 id="p2">Tên dự án 2</h3>
+              <p class="muted">Mô tả ngắn về dự án, vai trò, công nghệ.</p>
+              <div style="margin-top:8px"><a class="btn" href="#" target="_blank" rel="noopener">Xem mã nguồn</a></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="section" aria-labelledby="educationTitle">
+          <h2 id="educationTitle">Học vấn</h2>
+          <div class="item">
+            <strong>Đại học X — Chuyên ngành Y</strong>
+            <div class="meta muted">2016 — 2020</div>
+          </div>
+        </div>
+
+        <div class="section" aria-labelledby="contactTitle">
+          <h2 id="contactTitle">Liên hệ</h2>
+          <p class="muted">Email: <a href="mailto:you@example.com">you@example.com</a> · Điện thoại: <a href="tel:+84123456789">+84 123 456 789</a></p>
+          <form onsubmit="submitForm(event)" style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">
+            <input name="name" type="text" placeholder="Tên" required style="flex:1;min-width:180px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+            <input name="email" type="email" placeholder="Email" required style="flex:1;min-width:180px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+            <textarea name="message" placeholder="Tin nhắn..." required style="width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+            <div><button class="btn" type="submit">Gửi</button></div>
+          </form>
+          <p id="formMsg" class="muted" style="margin-top:8px"></p>
+        </div>
+
+        <footer>© <span id="year"></span> [Tên của bạn] — Portfolio</footer>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    // Small helpers: copy email, form submit (mailto fallback), set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function copyEmail(){
+      const txt = document.getElementById('emailText').textContent.trim();
+      if(!navigator.clipboard){ alert('Trình duyệt không hỗ trợ clipboard API.'); return; }
+      navigator.clipboard.writeText(txt).then(()=>{
+        const el = document.getElementById('formMsg');
+        el.textContent = 'Đã sao chép email vào clipboard.';
+        setTimeout(()=>el.textContent='',2000);
+      });
+    }
+
+    function submitForm(e){
+      e.preventDefault();
+      const f = e.target;
+      const name = encodeURIComponent(f.name.value);
+      const email = encodeURIComponent(f.email.value);
+      const message = encodeURIComponent(f.message.value);
+      // Simple mailto fallback to open user's mail app.
+      const subject = encodeURIComponent('Contact from portfolio: ' + f.name.value);
+      const body = `Name: ${f.name.value}\nEmail: ${f.email.value}\n\n${f.message.value}`;
+      window.location.href = `mailto:you@example.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+    }
+
+    // Optional: lazy replace avatar if not provided
+    const img = document.getElementById('profilePhoto');
+    img.onerror = ()=>{ img.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160"><rect width="100%" height="100%" fill="%230a2233"/><text x="50%" y="50%" font-size="20" fill="%23ffffff" dominant-baseline="middle" text-anchor="middle">Avatar</text></svg>'; }
+  </script>
+</body>
+</html>
