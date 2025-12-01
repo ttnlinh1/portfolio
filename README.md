@@ -67,7 +67,7 @@ Chuyên viên Sales & Business Development giàu kinh nghiệm phát triển th�
 ## <span style="color:#4682b4;">5. 🛠️ Kỹ năng (Skills)</span>
 
 - <img src="https://img.shields.io/badge/Sales%20%26%20Business%20Development-Lead%20generation%2C%20prospecting%2C%20closing%20deals-green?style=flat-square">
-- <img src="https://img.shields.io/badge/CRM%20%2F%20Tools-Salesforce%2C%20HubSpot-blue?style=flat-square">
+- <img src="https://img.shields.io/badge/CRM%20%2F%20Tools-Salesforce%2C%20Tableau%20BI-blue?style=flat-square">
 - Communication & Negotiation: Presentation, client handling
 - Analytical & Strategy: Sales forecasting, market research
 
