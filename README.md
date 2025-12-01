@@ -82,6 +82,5 @@ Chuyên viên Sales & Business Development giàu kinh nghiệm phát triển th�
 ## <span style="color:#4682b4;">7. 🌎 Ngôn ngữ (Languages)</span>
 
 - <img src="https://img.shields.io/badge/Vietnamese-Native-orange?style=flat-square">
-- <img src="https://img.shields.io/badge/English-%20Upper-Intermediate-brightgreen?style=flat-square">
-
+- <img src="https://img.shields.io/badge/English-upper-Intermediate-brightgreen?style=flat-square">
 ---
