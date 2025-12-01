@@ -85,7 +85,3 @@ Chuyên viên Sales & Business Development giàu kinh nghiệm phát triển th�
 - <img src="https://img.shields.io/badge/English-%20Upper-Intermediate-brightgreen?style=flat-square">
 
 ---
-
-<p align="center">
-  <b style="color:#8B0000;">Sử dụng mẫu này để cập nhật thông tin cá nhân, kinh nghiệm, kỹ năng và các mục liên quan cho bản CV hoặc hồ sơ LinkedIn của bạn.</b>
-</p>
