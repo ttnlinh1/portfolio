@@ -77,10 +77,21 @@ Chuyên viên Sales & Business Development giàu kinh nghiệm phát triển th�
 
 - Salesforce Certified AI Associate 2024
 - Salesforce Administrator 2022
----
-
 ## <span style="color:#4682b4;">7. 🌎 Ngôn ngữ (Languages)</span>
 
-- <img src="https://img.shields.io/badge/Vietnamese-Native-orange?style=flat-square">
-- <img src="https://img.shields.io/badge/English-upper-Intermediate-brightgreen?style=flat-square">
----
+<div align="center" style="margin-top:16px; margin-bottom:16px;">
+  <table style="border-collapse:separate;border-spacing:10px 5px;">
+    <tr>
+      <td align="center" style="background:#f8f9fa; border-radius:8px; padding:12px; min-width:120px;">
+        <img src="https://img.shields.io/badge/Vietnamese-Native-orange?style=for-the-badge" alt="Vietnamese">
+        <div style="margin-top:8px; color:#a0522d; font-weight:bold;">Tiếng Việt</div>
+        <div style="font-size:13px; color:#2e8b57;">Native (Bản ngữ)</div>
+      </td>
+      <td align="center" style="background:#f8f9fa; border-radius:8px; padding:12px; min-width:120px;">
+        <img src="https://img.shields.io/badge/English-Upper%20Intermediate-green?style=for-the-badge" alt="English">
+        <div style="margin-top:8px; color:#4682b4; font-weight:bold;">English</div>
+        <div style="font-size:13px; color:#2e8b57;">Upper Intermediate</div>
+      </td>
+    </tr>
+  </table>
+</div>
