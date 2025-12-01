@@ -4,8 +4,8 @@
 </p>
 <p align="center">
   <img src="https://i.postimg.cc/QCcfh8tC/1661321425763.jpg" 
-       width="200" 
-       style="border-radius: 50 %;">
+    width="200" 
+    style="border-radius: 50 %;">
 </p>
 
 
@@ -14,7 +14,7 @@
 <h1 align="center" style="color:white; margin-top:-140px; font-weight:900;">
   TRỊNH THỊ NGỌC LINH
 </h1>
-## <span style="color:#4682b4;">1. 🪪 Thông tin cá nhân</span>
+## <span style="color:#4682b4;">1. 🪪 Personal Information</span>
 
 - **Full name:** <span style="color:#a0522d;">Trịnh Thị Ngọc Linh </span>  
 - **DOB:** 22/11/1998  
@@ -25,7 +25,7 @@
 
 ---
 
-## <span style="color:#4682b4;">2. 🧑‍💼 Tóm tắt/Profile cá nhân (Summary)</span>
+## <span style="color:#4682b4;">2. 🧑‍💼 Summary</span>
 
 > <span style="color:#2e8b57;">
 Chuyên viên Sales & Business Development giàu kinh nghiệm phát triển thị trường, xây dựng quan hệ khách hàng doanh nghiệp, và đạt kết quả kinh doanh vượt chỉ tiêu. Thành thạo các công cụ CRM, có kỹ năng đàm phán, thuyết trình và chiến lược phân tích thị trường.
@@ -68,7 +68,7 @@ Chuyên viên Sales & Business Development giàu kinh nghiệm phát triển th�
 
 - <img src="https://img.shields.io/badge/Sales%20%26%20Business%20Development-Lead%20generation%2C%20prospecting%2C%20closing%20deals-green?style=flat-square">
 - <img src="https://img.shields.io/badge/CRM%20%2F%20Tools-Salesforce%2C%20Tableau%20BI-blue?style=flat-square">
-- Communication & Negotiation: Presentation, client handling
+- Communication & Negotiation: Researching, Identifying, Communication, Negotiation
 - Analytical & Strategy: Sales forecasting, market research
 
 ---
