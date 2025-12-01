@@ -16,9 +16,9 @@
 </h1>
 ## <span style="color:#4682b4;">1. 🪪 Thông tin cá nhân</span>
 
-- **Họ và tên:** <span style="color:#a0522d;">Trịnh Thị Ngọc Linh </span>  
-- **Ngày sinh:** 22/11/1998  
-- **Số điện thoại:** <span style="color:#d2691e;">0326 566 366</span>  
+- **Full name:** <span style="color:#a0522d;">Trịnh Thị Ngọc Linh </span>  
+- **DOB:** 22/11/1998  
+- **Phone Number:** <span style="color:#d2691e;">0326 566 366</span>  
 - **Email chuyên nghiệp:** <span style="color:#c71585;">ttnlinh1@gmail.com</span>  
 - **LinkedIn:** [linkedin.com/in/ttnlinh1](https://linkedin.com/in/nguyenvana)  
 - **Địa chỉ:** TP Hồ Chí Minh, Việt Nam
