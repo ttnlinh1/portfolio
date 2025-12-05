@@ -1,6 +1,3 @@
-<div style="background:#b8e3e4; padding:30px; border-radius:12px;">
-<p align="center">
-  <img src="https://i.postimg.cc/PrGJPt6J/1625731969566.jpg" alt="Banner" width="100%" />
 </p>
 <p align="center">
   <img src="https://i.postimg.cc/QCcfh8tC/1661321425763.jpg" 
@@ -13,12 +10,12 @@
   TRỊNH THỊ NGỌC LINH
 </h1>
 
-
+</p>
 
 ## <span style="color:#4682b4;">1. 🪪 Personal Information</span>
 
 
-
+</p>
 - **Full name:** <span style="color:#a0522d;">Trịnh Thị Ngọc Linh </span>  
 - **DOB:** 22/11/1998  
 - **Phone Number:** <span style="color:#d2691e;">0326 566 366</span>  
@@ -27,17 +24,17 @@
 - **Địa chỉ:** TP Hồ Chí Minh, Việt Nam
 
 ---
-
+</p>
 ## <span style="color:#4682b4;">2. 🧑‍💼 Summary</span>
 
 > <span style="color:#2e8b57;">
 Results-driven SaaS consultant with nearly 4 years of experience in outbound and inbound sales, lead qualification, and customer engagement. Proven track record in collaborating with cross-functional teams (Sales, Marketing, and Vendor) to deliver tailored solutions and drive customer success. Currently seeking to transition into a management role to further contribute to business development and team
 </span>
-
+</p>
 ---
-
+</p>
 ## <span style="color:#4682b4;">3. ⚒️ Kinh nghiệm làm việc (Work Experience)</span>
-
+</p>
 ### <span style="color:#4169e1;">Công ty:</span> <span style="color:#a0522d;">ABC Technology</span>
 **Vị trí:** Senior Sales Executive  
 **Thời gian:** 03/2022 - hiện tại
