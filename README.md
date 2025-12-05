@@ -28,7 +28,7 @@
 ## <span style="color:#4682b4;">2. 🧑‍💼 Summary</span>
 
 > <span style="color:#2e8b57;">
-Chuyên viên Sales & Business Development giàu kinh nghiệm phát triển thị trường, xây dựng quan hệ khách hàng doanh nghiệp, và đạt kết quả kinh doanh vượt chỉ tiêu. Thành thạo các công cụ CRM, có kỹ năng đàm phán, thuyết trình và chiến lược phân tích thị trường.
+Results-driven SaaS consultant with nearly 4 years of experience in outbound and inbound sales, lead qualification, and customer engagement. Proven track record in collaborating with cross-functional teams (Sales, Marketing, and Vendor) to deliver tailored solutions and drive customer success. Currently seeking to transition into a management role to further contribute to business development and team leadership.
 </span>
 
 ---
