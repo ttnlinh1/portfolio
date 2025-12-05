@@ -1,366 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Trịnh Thị Ngọc Linh — CV</title>
-  <meta name="description" content="Trịnh Thị Ngọc Linh — Results-driven SaaS consultant" />
+    <meta charset="UTF-8">
+    <title>CV - Trịnh Thị Ngọc Linh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    :root{
-      --bg:#f5f7fb;
-      --card:#ffffff;
-      --muted:#6b7280;
-      --accent:#1e70ff;
-      --accent-weak:rgba(30,112,255,0.12);
-      --glass: rgba(255,255,255,0.6);
-      --radius-lg:18px;
-      --radius-md:12px;
-      --max-width:1000px;
-      --gap:28px;
-      font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
 
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      padding:32px;
-      background:linear-gradient(180deg,var(--bg), #eef3fb 60%);
-      color:#111827;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
-    }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 24px;
+            border-radius: 10px;
+            border: 1px solid #e6e6e6;
+        }
 
-    .wrap{
-      max-width:var(--max-width);
-      margin: 24px auto;
-      background:var(--card);
-      border-radius:var(--radius-lg);
-      padding:28px;
-      box-shadow: 0 12px 30px rgba(13,38,76,0.08);
-      border: 1px solid rgba(13,38,76,0.04);
-    }
+        h2 {
+            margin-top: 28px;
+            color: #1a73e8;
+        }
 
-    .grid{
-      display:grid;
-      grid-template-columns: 300px 1fr;
-      gap:var(--gap);
-      align-items:start;
-    }
+        .two-col {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
 
-    /* Responsive */
-    @media (max-width:880px){
-      .grid{ grid-template-columns: 1fr; }
-      .left{ order: -1; }
-    }
+        .left {
+            flex: 1;
+            min-width: 260px;
+        }
 
-    /* LEFT COLUMN */
-    .left{
-      padding: 18px;
-      border-radius:12px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,251,255,0.85));
-      border:1px solid rgba(13,38,76,0.03);
-      display:flex;
-      flex-direction:column;
-      gap:16px;
-    }
+        .right {
+            flex: 2;
+            min-width: 300px;
+        }
 
-    /* Avatar frame */
-    .avatar-wrap{
-      display:flex;
-      align-items:center;
-      gap:12px;
-    }
+        .avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid #1a73e8;
+            margin-bottom: 16px;
+        }
 
-    .avatar-frame{
-      width:140px;
-      height:140px;
-      border-radius:14px;
-      padding:6px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(245,249,255,0.9));
-      box-shadow: 0 8px 20px rgba(30,112,255,0.08), inset 0 -1px 0 rgba(255,255,255,0.6);
-      border: 2px solid var(--accent);
-      position:relative;
-      overflow:hidden;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-    .avatar-frame::after{
-      content:"";
-      position:absolute;
-      inset: -4px;
-      border-radius:16px;
-      box-shadow: 0 0 18px rgba(30,112,255,0.18);
-      pointer-events:none;
-    }
+        ul {
+            margin: 8px 0 0 0;
+            padding-left: 20px;
+        }
 
-    .avatar-frame img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-      border-radius:10px;
-    }
+        li {
+            margin-bottom: 6px;
+        }
 
-    .personal{
-      flex:1;
-    }
+        .job {
+            margin-bottom: 18px;
+        }
 
-    h1{
-      margin:0 0 6px 0;
-      font-size:20px;
-      color:var(--accent);
-      letter-spacing:0.2px;
-    }
-    .meta{
-      margin:0;
-      font-size:13px;
-      color:var(--muted);
-    }
+        .job-title {
+            font-weight: bold;
+        }
 
-    .small-list{ list-style:none; padding:0; margin:6px 0 0 0; display:grid; gap:6px; }
-    .small-list li{ font-size:14px; color:#263238; }
-
-    .left-section-title{
-      margin-top:8px;
-      font-size:13px;
-      text-transform:uppercase;
-      color:var(--muted);
-      font-weight:600;
-      letter-spacing:0.8px;
-    }
-
-    /* RIGHT COLUMN */
-    .right{
-      padding:18px 6px;
-    }
-
-    .hero{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:12px;
-    }
-
-    .title{
-      margin:0;
-    }
-    .subtitle{
-      margin:6px 0 0 0;
-      color:var(--muted);
-      font-size:14px;
-      max-width:72%;
-    }
-
-    .btns{
-      display:flex;
-      gap:10px;
-      align-items:center;
-    }
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:8px 12px;
-      border-radius:10px;
-      border:1px solid rgba(13,38,76,0.06);
-      background:var(--glass);
-      text-decoration:none;
-      color:#0b2540;
-      font-weight:600;
-      font-size:13px;
-      box-shadow: 0 6px 18px rgba(13,38,76,0.04);
-    }
-    .btn.primary{
-      background:linear-gradient(90deg,var(--accent), #0f5fe6);
-      color:white;
-      border:none;
-      box-shadow: 0 10px 30px rgba(30,112,255,0.18);
-    }
-
-    .section{
-      margin-top:18px;
-    }
-    .section h3{
-      margin:0 0 8px 0;
-      font-size:15px;
-      color:#0f1724;
-    }
-    .section p{ color:var(--muted); margin:0; font-size:14px; }
-    .exp{
-      border-left:3px solid var(--accent-weak);
-      padding-left:12px;
-      margin:10px 0;
-    }
-
-    .job-title{ font-weight:700; color:#0b2540; margin:0; font-size:14px; }
-    .job-meta{ font-size:13px; color:var(--muted); margin:4px 0 8px 0; }
-
-    ul.clean{ padding-left:16px; margin:6px 0 0 0; }
-    ul.clean li{ margin:6px 0; color:#273043; font-size:14px; }
-
-    footer{
-      margin-top:24px;
-      font-size:13px;
-      color:var(--muted);
-      display:flex;
-      justify-content:space-between;
-      gap:12px;
-      align-items:center;
-    }
-
-    /* tiny badges */
-    .badge{
-      display:inline-block;
-      padding:6px 8px;
-      border-radius:999px;
-      background:var(--accent-weak);
-      color:var(--accent);
-      font-weight:700;
-      font-size:12px;
-    }
-
-  </style>
+        .job-time {
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
 
-  <div class="wrap" role="main" aria-labelledby="main-title">
-    <div class="grid">
+<div class="container">
 
-      <!-- LEFT COLUMN -->
-      <aside class="left" aria-label="Thông tin cá nhân">
-        <div class="avatar-wrap">
-          <div class="avatar-frame" aria-hidden="true">
-            <!-- Thay AVATAR_PATH bằng đường dẫn ảnh trong repo, ví dụ "./avatar.jpg" -->
-            <img src="AVATAR_PATH" alt="Avatar Trịnh Thị Ngọc Linh">
-          </div>
-
-          <div class="personal">
-            <h1 id="main-title">TRỊNH THỊ NGỌC LINH</h1>
-            <p class="meta">Results-driven SaaS consultant — outbound & inbound sales, lead qualification, customer engagement.</p>
-            <div style="margin-top:10px;">
-              <span class="badge">SaaS • BDR • AE</span>
+    <div class="two-col">
+        <!-- LEFT -->
+        <div class="left">
+            <div class="avatar">
+                <!-- Đổi avatar.jpg thành ảnh của bạn -->
+                <img src="avatar.jpg" alt="Avatar">
             </div>
-          </div>
-        </div>
 
-        <div class="left-block">
-          <p class="left-section-title">Contact</p>
-          <ul class="small-list">
-            <li><strong>Email:</strong> ttnlinh1@gmail.com</li>
-            <li><strong>Phone:</strong> 0326 566 366</li>
-            <li><strong>Location:</strong> Cầu Giấy, Hà Nội</li>
-            <li><strong>Year/Gender:</strong> 1998 / Female</li>
-          </ul>
-        </div>
+            <h2>Thông tin cá nhân</h2>
+            <p><b>Họ tên:</b> Trịnh Thị Ngọc Linh</p>
+            <p><b>Năm sinh:</b> 1998</p>
+            <p><b>Giới tính:</b> Nữ</p>
+            <p><b>Email:</b> ttnlinh1@gmail.com</p>
+            <p><b>SĐT:</b> 0326 566 366</p>
+            <p><b>Địa chỉ:</b> Cầu Giấy, Hà Nội</p>
 
-        <div>
-          <p class="left-section-title">Skills</p>
-          <ul class="small-list">
-            <li>Customer Research & Relationship Building</li>
-            <li>CRM / Salesforce / Oracle NetSuite</li>
-            <li>Google Workspace, Jira, Slack</li>
-            <li>Data & Reporting (Tableau, Dashboards)</li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="left-section-title">Certifications</p>
-          <ul class="small-list">
-            <li>Salesforce Certified AI Associate — Oct 2024</li>
-            <li>Salesforce Certified Administrator (SCA) — Sep 2022</li>
-          </ul>
-        </div>
-
-      </aside>
-
-      <!-- RIGHT COLUMN -->
-      <section class="right" aria-label="Nội dung chính">
-        <div class="hero">
-          <div style="flex:1;">
-            <h2 class="title" style="margin:0; font-size:20px;">Career Objective</h2>
-            <p class="subtitle">Results-driven SaaS consultant with nearly 4 years of experience in outbound & inbound sales, lead qualification, and customer engagement. Seeking to transition into a management role to contribute to business development and team leadership.</p>
-          </div>
-
-          <div class="btns" role="group" aria-label="Actions">
-            <!-- Link CV: upload file CV-TTNLinh.pdf to repo and update href -->
-            <a class="btn" href="CV-TTNLinh.pdf" download>Download CV</a>
-            <a class="btn primary" href="#" id="contact-btn">Contact</a>
-          </div>
-        </div>
-
-        <div class="section">
-          <h3>Work Experience</h3>
-
-          <div class="exp">
-            <p class="job-title">Account Executive — GIMASYS CO., LTD</p>
-            <p class="job-meta">01/2025 — 10/2025</p>
-            <ul class="clean">
-              <li>Managed & supported enterprise clients (Salesforce, Google Cloud Platform).</li>
-              <li>Built and maintained key-account relationships; upselling & retention.</li>
-              <li>Collaborated with vendors for joint BD; negotiated contracts.</li>
+            <h2>Kỹ năng</h2>
+            <ul>
+                <li>Customer Research</li>
+                <li>Relationship Building</li>
+                <li>Proactive Listening</li>
+                <li>Critical Thinking</li>
+                <li>CRM, ERP, Outreach Tools</li>
+                <li>Tableau BI, Dashboard</li>
+                <li>Google Workspace, Jira, Slack</li>
             </ul>
-          </div>
 
-          <div class="exp">
-            <p class="job-title">BDR Leader — GIMASYS CO., LTD</p>
-            <p class="job-meta">01/2024 — 12/2024</p>
-            <ul class="clean">
-              <li>Developed inbound & outbound strategies; outreach via email, cold calls, LinkedIn.</li>
-              <li>Built & led BDR team from 0 → 3 members; Managed Salesforce pipelines.</li>
+            <h2>Chứng chỉ</h2>
+            <ul>
+                <li>Salesforce Certified AI Associate (2024)</li>
+                <li>Salesforce Certified Administrator – SCA (2022)</li>
             </ul>
-          </div>
-
-          <div class="exp">
-            <p class="job-title">Business Development Representative — GIMASYS CO., LTD</p>
-            <p class="job-meta">06/2021 — 12/2023</p>
-            <ul class="clean">
-              <li>Sourced & qualified leads; supported marketing campaigns and vendor partnerships.</li>
-              <li>Exceeded yearly KPI (120% in opportunity generation).</li>
-            </ul>
-          </div>
-
-          <div class="exp">
-            <p class="job-title">Business Development Consultant — K-Group Việt Nam</p>
-            <p class="job-meta">05/2020 — 05/2021</p>
-            <ul class="clean">
-              <li>Developed partner segment; maintained partner relationships; prepared reports.</li>
-            </ul>
-          </div>
-
-          <div class="exp">
-            <p class="job-title">User Development Freelancer — GRABPAY by MOCA</p>
-            <p class="job-meta">04/2019 — 10/2019</p>
-            <ul class="clean">
-              <li>Implemented merchant activation programs (achieved 133% monthly KPI).</li>
-            </ul>
-          </div>
-
         </div>
 
-        <div class="section">
-          <h3>Education</h3>
-          <p>Bachelor's Degree — Economic Law, Ho Chi Minh City Open University (2016 — 2020)</p>
+        <!-- RIGHT -->
+        <div class="right">
+            <h2>Mục tiêu nghề nghiệp</h2>
+            <p>
+                Results-driven SaaS consultant with nearly 4 years of experience in outbound and inbound sales,
+                lead qualification, and customer engagement. Seeking to transition into a management role to 
+                contribute to business development and team leadership.
+            </p>
+
+            <h2>Kinh nghiệm làm việc</h2>
+
+            <div class="job">
+                <p class="job-title">Account Executive — GIMASYS CO., LTD</p>
+                <p class="job-time">01/2025 – 10/2025</p>
+                <ul>
+                    <li>Quản lý & hỗ trợ khách hàng doanh nghiệp (Salesforce, GCP).</li>
+                    <li>Duy trì quan hệ key-account; upsell & retention.</li>
+                    <li>Phối hợp vendor để tạo lead & triển khai dự án.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <p class="job-title">BDR Leader — GIMASYS CO., LTD</p>
+                <p class="job-time">01/2024 – 12/2024</p>
+                <ul>
+                    <li>Xây dựng chiến lược inbound/outbound.</li>
+                    <li>Làm việc với Salesforce, NetSuite, Google Workspace.</li>
+                    <li>Xây & dẫn đội BDR từ 0 → 3 người.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <p class="job-title">Business Development Representative — GIMASYS</p>
+                <p class="job-time">06/2021 – 12/2023</p>
+                <ul>
+                    <li>Lead sourcing & qualification.</li>
+                    <li>Hỗ trợ marketing & vendor campaigns.</li>
+                    <li>Đạt 120% KPI.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <p class="job-title">Business Development Consultant — K-Group</p>
+                <p class="job-time">05/2020 – 05/2021</p>
+                <ul>
+                    <li>Phát triển đối tác, duy trì mối quan hệ.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <p class="job-title">User Development Freelancer — GrabPay by Moca</p>
+                <p class="job-time">04/2019 – 10/2019</p>
+                <ul>
+                    <li>Đạt 133% KPI kích hoạt người dùng/thương nhân.</li>
+                </ul>
+            </div>
+
+            <h2>Học vấn</h2>
+            <p>
+                Cử nhân Luật Kinh Tế — Đại học Mở TP.HCM (2016–2020)
+            </p>
         </div>
-
-        <footer>
-          <div>© <strong>Trịnh Thị Ngọc Linh</strong></div>
-          <div style="text-align:right; color:var(--muted); font-size:13px;">Built with ♥ — Minimal / High-tech</div>
-        </footer>
-      </section>
-
     </div>
-  </div>
 
-  <script>
-    // Small interaction: contact button opens mailto
-    document.getElementById('contact-btn').addEventListener('click', function(e){
-      e.preventDefault();
-      window.location.href = 'mailto:ttnlinh1@gmail.com?subject=Contact%20from%20Website';
-    });
-  </script>
+</div>
+
 </body>
 </html>
